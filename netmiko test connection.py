@@ -1,8 +1,7 @@
 from netmiko import ConnectHandler
 t=open("devicelist.txt","r")
 g=t.readlines()
-g=g[2]
-for z in range(0,3):
+for z in range(0,len(g)-1):
     z=g.split(",")
     z[4]=str(z[4])
     print(z[4])
